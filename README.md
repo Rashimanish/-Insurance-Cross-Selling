@@ -58,3 +58,11 @@ The application may then be terminated with the following commands.
 $ ^C           # exit flask application (ctrl-c)
 $ deactivate   # exit virtual environment
 ~~~
+
+## Screen Shots
+
+![image](https://github.com/user-attachments/assets/75bceb5c-caf0-4ef0-8691-bd70d03251c0)
+
+
+![image](https://github.com/user-attachments/assets/f6614636-7dcf-4b86-920a-a1e3acb5ecde)
+
