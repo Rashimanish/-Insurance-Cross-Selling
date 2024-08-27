@@ -24,7 +24,14 @@ The model development notebook is located [here](https://github.com/Rashimanish/
 
 ## Installation
 
-First clone the repo locally.
+#Option 1:~
+Use the Pre-built Executable:
+~~~bash
+After downloading the project , navigate to the `dist` directory where `InsuranceCrossSell.exe` is located,  Double-click on `InsuranceCrossSell.exe` to start the application.
+~~~
+
+#Option 2:
+Clone the git hub repo locally.
 ~~~bash
 git clone https://github.com/Rashimanish/-Insurance-Cross-Selling.git
 ~~~
