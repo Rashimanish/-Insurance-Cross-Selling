@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Insurance Cross Sell Prediction </h1>
+    </header>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <div class="form-container">
+            <div class="form-item">
+                <label for="Gender">Gender:</label>
+                <select name="Gender" id="Gender" class="form-control" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" id="Age" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label for="Driving_License">Driving License:</label>
+                <select name="Driving_License" id="Driving_License" class="form-control" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="Region_Code">Region Code:</label>
+                <input type="number" name="Region_Code" id="Region_Code" class="form-control" step="0.1" required>
+            </div>
+
+            <div class="form-item">
+                <label for="Previously_Insured">Previously Insured:</label>
+                <select name="Previously_Insured" id="Previously_Insured" class="form-control" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="Vehicle_Age">Vehicle Age:</label>
+                <select name="Vehicle_Age" id="Vehicle_Age" class="form-control" required>
+                    <option value="1-2 Year">1-2 Year</option>
+                    <option value="< 1 Year">< 1 Year</option>
+                    <option value="> 2 Years">> 2 Years</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="Vehicle_Damage">Vehicle Damage:</label>
+                <select name="Vehicle_Damage" id="Vehicle_Damage" class="form-control" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="Annual_Premium">Annual Premium:</label>
+                <input type="number" name="Annual_Premium" id="Annual_Premium" class="form-control" required>
+            </div>
+
+            <div class="form-item">
+                <label for="Policy_Sales_Channel">Policy Sales Channel:</label>
+                <input type="number" name="Policy_Sales_Channel" id="Policy_Sales_Channel" class="form-control" step="0.1" required>
+            </div>
+
+            <div class="form-item">
+                <label for="Vintage">Vintage:</label>
+                <input type="number" name="Vintage" id="Vintage" class="form-control" required>
+            </div>
+
+            <div class="form-item full-width">
+                <button type="submit" class="submit-button">Predict</button>
+            </div>
+        </div>
+    </form>
+    
+</body>
+<footer>
+    <p>© 2024 Rashmi Maneesha. All rights reserved.</p>
+</footer>
+
+</html>
